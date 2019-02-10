@@ -14,7 +14,7 @@ import java.util.Set;
  */
 public class JedisTest {
     /**
-     *  测试redis 服务
+     *  测试连接redis 服务
      */
     @Test
     public void linkTest() {
@@ -61,6 +61,7 @@ public class JedisTest {
     /**
      * 测试Keys实例
      */
+    @Test
     public void keysTest() {
         //连接本地的 Redis 服务
         Jedis jedis = new Jedis("localhost");
@@ -73,4 +74,5 @@ public class JedisTest {
             System.out.println(key);
         }
     }
+
 }
